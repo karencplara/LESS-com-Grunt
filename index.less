@@ -1,0 +1,12 @@
+@alturaNavbar: 50px;
+@corNavbar: green;
+
+.arredonda(@raio){
+	border-radius: @raio;
+}
+.navbar {
+   @corNavbar: red;  
+   height: @alturaNavbar;
+   background: @corNavbar;
+   .arredonda(@alturaNavbar/2);
+}
